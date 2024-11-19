@@ -5,7 +5,7 @@ CREATE TABLE funcoes_scrum (
     nome VARCHAR(100) NOT NULL
 )
 
-CREATE TABLE sobre_nos (
+CREATE TABLE integrantes (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     id_funcao VARCHAR(100) NOT NULL,
