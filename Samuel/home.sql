@@ -20,9 +20,22 @@ CREATE TABLE contato (
     mensagem TEXT NOT NULL
 );
 
--- INSERTS
+-- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS)
 
--- FERRAMENTAS
+INSERT INTO paginas_portal (titulo, url) VALUES 
+('Inicio', 'index.html'),
+('Carreiras', '/pages/carreira.html'),
+('Dicas', '/pages/dicas.html'),
+('Sobre nós', '/pages/sobre.html'),
+('Notícias', '/pages/noticia.html'),
+('Simulados' , '/pages/simulado.html'),
+('Entrevistas', '/pages/entrevista.html');
+
+-- TESTE:
+SELECT * FROM paginas_portal;
+
+-- INSERTS - FERRAMENTAS - JÁ FORAM TESTADOS
+
 INSERT INTO ferramentas (ferramenta, descricao, url_img) VALUES 
 ('Omni Calculator', 'Calculadoras para matemática e ciências.', 'https://portal-de-materias.vercel.app/assets/img/logos/ominiCalculator.png'),
 ('Ptable', 'Tabela periódica interativa com dados químicos.', 'https://portal-de-materias.vercel.app/assets/img/logos/ptable.png'),
