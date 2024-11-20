@@ -20,7 +20,7 @@ CREATE TABLE contato (
     mensagem TEXT NOT NULL
 );
 
--- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS)
+-- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS) - JÁ FORAM TESTADOS --
 
 INSERT INTO paginas_portal (titulo, url) VALUES 
 ('Inicio', 'index.html'),
@@ -34,7 +34,21 @@ INSERT INTO paginas_portal (titulo, url) VALUES
 -- TESTE:
 SELECT * FROM paginas_portal;
 
--- INSERTS - FERRAMENTAS - JÁ FORAM TESTADOS
+-- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 2 (COM O URL DA PÁGINA) - JÁ FORAM TESTADOS --
+
+INSERT INTO paginas_portal (titulo, url) VALUES 
+('Inicio', 'https://portal-de-materias.vercel.app/'),
+('Carreiras', 'https://portal-de-materias.vercel.app/pages/carreira.html'),
+('Dicas', 'https://portal-de-materias.vercel.app/pages/dica.html'),
+('Sobre nós', 'https://portal-de-materias.vercel.app/pages/sobre.html'),
+('Notícias', 'https://portal-de-materias.vercel.app/pages/noticia.html'),
+('Simulados' , 'https://portal-de-materias.vercel.app/pages/simulado.html'),
+('Entrevistas', 'https://portal-de-materias.vercel.app/pages/entevista.html');
+
+-- TESTE:
+SELECT * FROM paginas_portal;
+
+-- INSERTS - FERRAMENTAS - JÁ FORAM TESTADOS --
 
 INSERT INTO ferramentas (ferramenta, descricao, url_img) VALUES 
 ('Omni Calculator', 'Calculadoras para matemática e ciências.', 'https://portal-de-materias.vercel.app/assets/img/logos/ominiCalculator.png'),
