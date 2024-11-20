@@ -1,10 +1,15 @@
--- EM ANDAMENT0 (INSERÇÃO DOS DADOS)    
+-- EM ANDAMENT0 (INSERÇÃO DOS DADOS) --
+
+-- CRIAÇÃO DAS TABELAS --
+
+-- TABELA DE PÁGINAS DO PORTAL --
 CREATE TABLE paginas_portal (
     id SERIAL PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
     url VARCHAR(100) NOT NULL
 );
 
+-- TABELA DE FERRAMENTAS --
 CREATE TABLE ferramentas (
     id SERIAL PRIMARY KEY,
     ferramenta VARCHAR(100) NOT NULL,
@@ -12,6 +17,7 @@ CREATE TABLE ferramentas (
     url_img TEXT NOT NULL
 );
 
+-- TABELA DE CONTATO --
 CREATE TABLE contato (
     id SERIAL PRIMARY KEY,
     nome_completo VARCHAR(100) NOT NULL,
@@ -19,8 +25,9 @@ CREATE TABLE contato (
     mensagem TEXT NOT NULL
 );
 
--- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS) - JÁ FORAM TESTADOS --
+-- INSEÇÕES NAS TABELAS:
 
+-- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS) - JÁ FORAM TESTADOS --
 INSERT INTO paginas_portal (titulo, url) VALUES 
 ('Inicio', 'index.html'),
 ('Carreiras', '/pages/carreira.html'),
@@ -29,12 +36,9 @@ INSERT INTO paginas_portal (titulo, url) VALUES
 ('Notícias', '/pages/noticia.html'),
 ('Simulados' , '/pages/simulado.html'),
 ('Entrevistas', '/pages/entrevista.html');
-
 -- TESTE:
 SELECT * FROM paginas_portal;
-
 -- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 2 (COM O URL DA PÁGINA) - JÁ FORAM TESTADOS --
-
 INSERT INTO paginas_portal (titulo, url) VALUES 
 ('Inicio', 'https://portal-de-materias.vercel.app/'),
 ('Carreiras', 'https://portal-de-materias.vercel.app/pages/carreira.html'),
@@ -43,12 +47,10 @@ INSERT INTO paginas_portal (titulo, url) VALUES
 ('Notícias', 'https://portal-de-materias.vercel.app/pages/noticia.html'),
 ('Simulados' , 'https://portal-de-materias.vercel.app/pages/simulado.html'),
 ('Entrevistas', 'https://portal-de-materias.vercel.app/pages/entevista.html');
-
 -- TESTE:
 SELECT * FROM paginas_portal;
 
 -- INSERTS - FERRAMENTAS - JÁ FORAM TESTADOS --
-
 INSERT INTO ferramentas (ferramenta, descricao, url_img) VALUES 
 ('Omni Calculator', 'Calculadoras para matemática e ciências.', 'https://portal-de-materias.vercel.app/assets/img/logos/ominiCalculator.png'),
 ('Ptable', 'Tabela periódica interativa com dados químicos.', 'https://portal-de-materias.vercel.app/assets/img/logos/ptable.png'),
@@ -56,12 +58,10 @@ INSERT INTO ferramentas (ferramenta, descricao, url_img) VALUES
 ('Notion', 'Ferramenta de produtividade e organização.', 'https://portal-de-materias.vercel.app/assets/img/logos/notion.png'),
 ('Google', 'Busca e serviços online.', 'https://portal-de-materias.vercel.app/assets/img/logos/google.png'),
 ('Quizlet', 'Flashcards e recursos de aprendizado.', 'https://portal-de-materias.vercel.app/assets/img/logos/quizlet.png');
-
 -- TESTE:
 SELECT * FROM ferramentas;
 
 -- INSERTS - CONTATO - JÁ FORAM TESTADOS --
-
 INSERT INTO contato (nome_completo, email, mensagem) VALUES
 ('Ana Clara Souza', 'ana.souza@exemplo.com', 'O portal é muito útil, parabéns!'),
 ('Bruno Henrique Silva', 'bruno.silva@exemplo.com', 'Gostei muito das ferramentas disponíveis.'),
@@ -78,6 +78,5 @@ INSERT INTO contato (nome_completo, email, mensagem) VALUES
 ('Nathalia Costa Santos', 'nathalia.santos@exemplo.com', 'Parabéns pelo trabalho, está excelente!'),
 ('Otávio Martins Ribeiro', 'otavio.ribeiro@exemplo.com', 'As entrevistas são muito inspiradoras.'),
 ('Patrícia Rodrigues Silva', 'patricia.silva@exemplo.com', 'Adorei a seção de carreiras.');
-
 -- TESTE:
 SELECT * FROM contato;
