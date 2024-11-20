@@ -12,11 +12,10 @@ CREATE TABLE ferramentas (
     url_img TEXT NOT NULL
 );
 
-
 CREATE TABLE contato (
     id SERIAL PRIMARY KEY,
     nome_completo VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    email VARCHAR(320) NOT NULL,
     mensagem TEXT NOT NULL
 );
 
@@ -60,3 +59,25 @@ INSERT INTO ferramentas (ferramenta, descricao, url_img) VALUES
 
 -- TESTE:
 SELECT * FROM ferramentas;
+
+-- INSERTS - CONTATO - JÁ FORAM TESTADOS --
+
+INSERT INTO contato (nome_completo, email, mensagem) VALUES
+('Ana Clara Souza', 'ana.souza@exemplo.com', 'O portal é muito útil, parabéns!'),
+('Bruno Henrique Silva', 'bruno.silva@exemplo.com', 'Gostei muito das ferramentas disponíveis.'),
+('Carla Maria Oliveira', 'carla.oliveira@exemplo.com', 'O site é muito intuitivo e fácil de usar.'),
+('Daniela Ferreira Lima', 'daniela.lima@exemplo.com', 'As dicas são muito boas, obrigado!'),
+('Eduardo Pereira Santos', 'eduardo.santos@exemplo.com', 'Parabéns pelo excelente trabalho!'),
+('Fernanda Costa Almeida', 'fernanda.almeida@exemplo.com', 'Adorei a seção de entrevistas.'),
+('Gabriel Martins Ribeiro', 'gabriel.ribeiro@exemplo.com', 'O conteúdo é muito bom e bem organizado.'),
+('Helena Rodrigues Cardoso', 'helena.cardoso@exemplo.com', 'Gostei muito do portal, está de parabéns!'),
+('Igor Mendes Silva', 'igor.silva@exemplo.com', 'As ferramentas são muito úteis para meus estudos.'),
+('Juliana Fátima Souza', 'juliana.souza@exemplo.com', 'O site é muito completo e informativo.'),
+('Lucas Henrique Oliveira', 'lucas.oliveira@exemplo.com', 'Gostei muito das dicas e simulados.'),
+('Mariana Pereira Lima', 'mariana.lima@exemplo.com', 'O portal é muito intuitivo e fácil de usar.'),
+('Nathalia Costa Santos', 'nathalia.santos@exemplo.com', 'Parabéns pelo trabalho, está excelente!'),
+('Otávio Martins Ribeiro', 'otavio.ribeiro@exemplo.com', 'As entrevistas são muito inspiradoras.'),
+('Patrícia Rodrigues Silva', 'patricia.silva@exemplo.com', 'Adorei a seção de carreiras.');
+
+-- TESTE:
+SELECT * FROM contato;
