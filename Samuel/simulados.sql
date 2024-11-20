@@ -44,7 +44,7 @@ INSERT INTO simulados (titulo, dificuldade, tipo) VALUES
 -- TESTE:
 SELECT * FROM simulados;
 
--- SIMULADO 1 - TABELA DE QUESTÕES 
+-- SIMULADO 1 - QUESTÕES DA TABELA DE QUESTÕES
 INSERT INTO questoes (enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta, id_simulado) VALUES 
 ('Questão01: (PUC) O número normal de subníveis existentes no quarto nível energético dos átomos é igual a:', 'a) 2', 'b) 5', 'c) 3', 'd) 1', 'e) 4', 'E', 1),
 
@@ -65,8 +65,10 @@ INSERT INTO questoes (enunciado, alternativa_a, alternativa_b, alternativa_c, al
 -- QUESTÃO 9 - RESOLVER COM A MARI - QUESTÃO COM IMAGEM
 
 ('Questão10: (PUC-SP) Resolva a questão com base na análise das afirmativas abaixo. I – A tabela periódica moderna atual está disposta em ordem crescente de massa atômica. II – Todos os elementos que possuem 1 elétron e 2 elétrons na camada de valência são, respectivamente, metais alcalinos e metais alcalinoterrosos, desde que o número quântico principal dessa camada (n não igual1). III – Em um mesmo período, os elementos apresentam o mesmo número de níveis (camadas). IV – Em um mesmo grupo (família), os elementos apresentam o mesmo número de níveis (camadas).', 'a) I e IV (apenas)', 'b) I e II (apenas)', 'c) II e III (apenas)', 'd) II e IV (apenas)', 'e) III e IV (apenas)', 'C', 1);
+-- TESTE:
+SELECT * FROM questoes;
 
--- SIMULADO 2 - TABELA DE QUESTÕES
+-- SIMULADO 2 - QUESTÕES DA TABELA DE QUESTÕES
 
 INSERT INTO questoes (enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta, id_simulado) VALUES 
 
@@ -89,8 +91,10 @@ INSERT INTO questoes (enunciado, alternativa_a, alternativa_b, alternativa_c, al
 ('Questão09: (UFF) Tem-se uma amostra gasosa formada por um dos seguintes compostos: CH4; C2H4; C2H6; C3H6 ou C3H8. Se 22 g dessa amostra ocupam o volume de 24,6 L à pressão de 0,5 atm e temperatura de 27 °C (Dado: R = 0,082 L .atm.K–1.mol–1), conclui-se que se trata do gás:', 'a) etano.', 'b) metano.', 'c) propano.', 'd) propeno.', 'e) eteno.', 'C', 2),
 
 ('Questão10: (Mack-2003) Uma distribuição eletrônica possível para um elemento X, que pertence à mesma família do elemento bromo, cujo número atômico é igual a 35, é:', 'a) 1s2, 2s2, 2p5', 'b) 1s2, 2s2, 2p6, 3s2, 3p1', 'c) 1s2, 2s2, 2p2', 'd) 1s2, 2s2, 2p6, 3s1', 'e) 1s2, 2s2, 2p6, 3s2, 3p6, 4s2, 3d5', 'A', 2);
+-- TESTE:
+SELECT * FROM questoes;
 
--- SIMULADO 3 - TABELA DE QUESTÕES
+-- SIMULADO 3 - QUESTÕES DA TABELA DE QUESTÕES
 INSERT INTO questoes (enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta, id_simulado) VALUES 
 
 ('Questão01: (UFPI) A nova legislação de trânsito prevê um limite máximo de 6 decigramas de álcool, C2H5OH, por litro de sangue do motorista (0,6 g/L). Considerando que a porcentagem média de álcool ingerida que fica no sangue é de 15% em massa, identifique, para um adulto com peso médio de 70 kg cujo volume de sangue é de 5 litros, o número máximo de latas de cerveja (volume = 350 mL) ingeridas sem que o limite estabelecido seja ultrapassado. Dados complementares: a cerveja tem 5% de álcool em volume, e a densidade do álcool é 0,80 g/mL.', 'a) 1', 'b) 2', 'c) 3', 'd) 4', 'e) 5', 'A', 3),
@@ -112,3 +116,5 @@ INSERT INTO questoes (enunciado, alternativa_a, alternativa_b, alternativa_c, al
 -- QUESTÃO 9 - RESOLVER COM A MARI - QUESTÃO COM IMAGEM
 
 ('Questão10: (Mackenzie) Qual a concentração, em g/L, da solução obtida ao se dissolverem 4 g de cloreto de sódio em 50 cm3 de água?', 'a) 200 g/L', 'b) 20 g/L', 'c) 0,08 g/L', 'd) 12,5 g/L', 'e) 80 g/L', 'E', 3);
+-- TESTE:
+SELECT * FROM questoes;
