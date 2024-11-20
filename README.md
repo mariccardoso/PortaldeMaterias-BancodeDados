@@ -15,11 +15,10 @@ Este é o nosso projeto final da disciplina de Banco de Dados. Neste projeto, vo
 - **Vitor**
     - ![Foto Vitor](#)
 
-
 ## Papéis de Cada Integrante 👥
 - **Mariana (Scrum Master)**: Responsável pelo repositório, MER, DER e o código SQL de dicas e das tabelas gerais.
 - **Maria Eduarda (Desenvolvedora)**: Responsável pelo MER e o código SQL de entrevistas e sobre.
-- **Samuel (Product Owner)**: Responsável pelo código SQL da página inicial do Portal e simulados.
+- **Samuel (Product Owner)**: Responsável pelo código SQL da página inicial do Portal, simulados e o README.
 - **Bruno (Desenvolvedor)**: Responsável pelo código SQL de notícias.
 - **Vitor (Desenvolvedor)**: Responsável pelo código SQL de carreiras.
 
