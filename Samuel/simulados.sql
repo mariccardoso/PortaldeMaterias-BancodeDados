@@ -7,7 +7,6 @@ CREATE TABLE simulados (
     id SERIAL PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
     dificuldade VARCHAR(100) NOT NULL,
-    questoes INT NOT NULL,
     tipo VARCHAR(100) NOT NULL
 );
 
@@ -30,18 +29,18 @@ CREATE TABLE questoes (
 
 -- INSERTS - SIMULADOS - OPÇÃO 1 - JÁ FORAM TESTADOS --
 INSERT INTO simulados (titulo, dificuldade, questoes, tipo) VALUES 
-('Mergulhe no conhecimento - Questões', 'Fácil', 10, 'Questões de vestibulares'),
-('Para Gabaritar! - Questões', 'Intermediário', 10, 'Questões de vestibulares'),
-('Para Gabaritar! - Questões', 'Básico', 10, 'Questões de vestibulares'),
-('Para Gabaritar! - Questões', 'Difícil', 10, 'Questões de vestibulares');
+('Mergulhe no conhecimento - Questões', 'Fácil', 'Questões de vestibulares'),
+('Para Gabaritar! - Questões', 'Intermediário', 'Questões de vestibulares'),
+('Para Gabaritar! - Questões', 'Básico', 'Questões de vestibulares'),
+('Para Gabaritar! - Questões', 'Difícil', 'Questões de vestibulares');
 -- TESTE:
 SELECT * FROM simulados;
 -- INSERTS - SIMULADOS - OPÇÃO 2 - JÁ FORAM TESTADOS --
 INSERT INTO simulados (titulo, dificuldade, questoes, tipo) VALUES 
-('Mergulhe no conhecimento - Questões', 'Fácil', 10, 'Questões de: PUC, Fatec, Fuvest, UFRGS, UFAL, Mackenzie, UESPI'),
-('Para Gabaritar! - Questões', 'Intermediário', 10, 'Questões de: UFPI, PUC, UECE, ITA, Uespi, Ufes, Mackenzie'),
-('Para Gabaritar! - Questões', 'Básico', 10, 'Questões de: ENEM, UNIUBE, UFF, Mack'),
-('Para Gabaritar! - Questões', 'Difícil', 10, 'Questões de: Precisa colocar as questões ainda');
+('Mergulhe no conhecimento - Questões', 'Fácil', 'Questões de: PUC, Fatec, Fuvest, UFRGS, UFAL, Mackenzie, UESPI'),
+('Para Gabaritar! - Questões', 'Intermediário', 'Questões de: UFPI, PUC, UECE, ITA, Uespi, Ufes, Mackenzie'),
+('Para Gabaritar! - Questões', 'Básico', 'Questões de: ENEM, UNIUBE, UFF, Mack'),
+('Para Gabaritar! - Questões', 'Difícil', 'Questões de: Precisa colocar as questões ainda');
 -- TESTE:
 SELECT * FROM simulados;
 
