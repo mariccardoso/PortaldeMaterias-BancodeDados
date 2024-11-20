@@ -2,7 +2,7 @@
 
 -- CRIAÇÃO DAS TABELAS --
 
--- TABELA DE SIMULADOS --
+-- TABELA DE SIMULADOS -- ATUALIZADA
 CREATE TABLE simulados (
     id SERIAL PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
@@ -33,7 +33,15 @@ INSERT INTO simulados (titulo, dificuldade, questoes, tipo) VALUES
 ('Mergulhe no conhecimento - Questões', 'Fácil', 10, 'Questões de vestibulares'),
 ('Para Gabaritar! - Questões', 'Intermediário', 10, 'Questões de vestibulares'),
 ('Para Gabaritar! - Questões', 'Básico', 10, 'Questões de vestibulares'),
-('Para Gabaritar! - Questões', 'Difícil', 10, 'Questões de vestibulares'),
-('Para Gabaritar! - Questões', 'Avançado', 10, 'Questões de vestibulares');
+('Para Gabaritar! - Questões', 'Difícil', 10, 'Questões de vestibulares');
+-- TESTE:
+SELECT * FROM simulados;
+
+-- INSERTS - SIMULADOS - OPÇÃO 2 - JÁ FORAM TESTADOS --
+INSERT INTO simulados (titulo, dificuldade, questoes, tipo) VALUES 
+('Mergulhe no conhecimento - Questões', 'Fácil', 10, 'Questões de: PUC, Fatec, Fuvest, UFRGS, UFAL, Mackenzie, UESPI'),
+('Para Gabaritar! - Questões', 'Intermediário', 10, 'Questões de: UFPI, PUC, UECE, ITA, Uespi, Ufes, Mackenzie'),
+('Para Gabaritar! - Questões', 'Básico', 10, 'Questões de: ENEM, UNIUBE, UFF, Mack'),
+('Para Gabaritar! - Questões', 'Difícil', 10, 'Questões de: Precisa colocar as questões ainda');
 -- TESTE:
 SELECT * FROM simulados;
