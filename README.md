@@ -1,7 +1,20 @@
 # Portal de Matérias - Banco de Dados 📚💻
 
 ## Introdução
-Este é o nosso projeto final da disciplina de Banco de Dados. Neste projeto, você verá o nosso banco de dados para o <a href="https://portal-de-materias.vercel.app/" style="color: red;">Portal de Química</a>, que contém todas as funcionalidades e conteúdos do portal, juntamente com um Modelo Entidade-Relacionamento (MER) e um Diagrama de Entidades e Relacionamentos (DER), além das queries SQL.
+Este é o nosso projeto final da disciplina de Banco de Dados. Neste projeto, você verá o nosso banco de dados para o [Portal de Química](https://portal-de-materias.vercel.app/), que contém todas as funcionalidades e conteúdos do portal, juntamente com um Modelo Entidade-Relacionamento (MER) e um Diagrama de Entidades e Relacionamentos (DER), além das queries SQL.
+
+## Integrantes 👨‍👩‍👧‍👦
+- **Mariana**
+    - ![Foto Mariana](#)
+- **Maria Eduarda**
+    - ![Foto Maria Eduarda](#)
+- **Samuel**
+    - ![Foto Samuel](#)
+- **Bruno**
+    - ![Foto Bruno](#)
+- **Vitor**
+    - ![Foto Vitor](#)
+
 
 ## Papéis de Cada Integrante 👥
 - **Mariana (Scrum Master)**: Responsável pelo repositório, MER, DER e o código SQL de dicas e das tabelas gerais.
@@ -113,18 +126,6 @@ O MER do projeto foi desenvolvido para representar todas as entidades e seus rel
 
 ## Diagrama de Entidades e Relacionamentos (DER) 📈
 _Futuramente, esta seção será preenchida com o DER do projeto._
-
-## Integrantes 👨‍👩‍👧‍👦
-- **Mariana**
-    - ![Foto Mariana](#)
-- **Maria Eduarda**
-    - ![Foto Maria Eduarda](#)
-- **Samuel**
-    - ![Foto Samuel](#)
-- **Bruno**
-    - ![Foto Bruno](#)
-- **Vitor**
-    - ![Foto Vitor](#)
 
 ## Queries (Códigos SQL) 💾
 ### Tabelas Gerais
