@@ -1,16 +1,16 @@
-# Portal de Matérias - Banco de Dados
+# Portal de Matérias - Banco de Dados 📚💻
 
 ## Introdução
-Este, é o nosso projeto final da disciplina de Banco de Dados. Neste projeto, você verá o nosso banco de dados para o [Portal de Química](https://portal-de-materias.vercel.app/), que contém todas as funcionalidades e conteúdos do portal, juntamente com um Modelo Entidade-Relacionamento (MER) e um Diagrama de Entidades e Relacionamentos (DER), além das queries SQL.
+Este é o nosso projeto final da disciplina de Banco de Dados. Neste projeto, você verá o nosso banco de dados para o <a href="https://portal-de-materias.vercel.app/" style="color: red;">Portal de Química</a>, que contém todas as funcionalidades e conteúdos do portal, juntamente com um Modelo Entidade-Relacionamento (MER) e um Diagrama de Entidades e Relacionamentos (DER), além das queries SQL.
 
-## Papéis de Cada Integrante
+## Papéis de Cada Integrante 👥
 - **Mariana (Scrum Master)**: Responsável pelo repositório, MER, DER e o código SQL de dicas e das tabelas gerais.
 - **Maria Eduarda (Desenvolvedora)**: Responsável pelo MER e o código SQL de entrevistas e sobre.
 - **Samuel (Product Owner)**: Responsável pelo código SQL da página inicial do Portal e simulados.
 - **Bruno (Desenvolvedor)**: Responsável pelo código SQL de notícias.
 - **Vitor (Desenvolvedor)**: Responsável pelo código SQL de carreiras.
 
-## Modelo Entidade-Relacionamento (MER)
+## Modelo Entidade-Relacionamento (MER) 📊
 O MER do projeto foi desenvolvido para representar todas as entidades e seus relacionamentos no banco de dados do portal. As principais entidades incluem especialistas, dicas, notícias, media_noticia, entrevistas, simulados, questões, funcoes_scrum, integrantes, ferramentas, paginas_portal e contato.
 
 ### Entidades e Atributos
@@ -90,7 +90,7 @@ O MER do projeto foi desenvolvido para representar todas as entidades e seus rel
     - email VARCHAR(100) NOT NULL
     - mensagem TEXT NOT NULL
 
-### Chaves Estrangeiras
+### Chaves Estrangeiras 🔑
 - Cada dica tem um autor (1:N)
 - Cada notícia tem um autor (1:N)
 - Cada notícia tem várias mídias (1:N)
@@ -98,7 +98,7 @@ O MER do projeto foi desenvolvido para representar todas as entidades e seus rel
 - Cada questão tem um simulado (1:N)
 - Cada integrante tem uma função no scrum (1:1)
 
-### Restrições
+### Restrições 🚧
 - Cada especialista deve ter um nome e uma especialidade
 - Cada dica deve ter um título, uma descrição, uma URL de vídeo e um autor
 - Cada notícia deve ter um título, uma descrição e um autor
@@ -111,10 +111,10 @@ O MER do projeto foi desenvolvido para representar todas as entidades e seus rel
 - Cada ferramenta deve ter um nome, uma descrição e uma URL de imagem
 - Cada contato deve ter um nome, um email e uma mensagem
 
-## Diagrama de Entidades e Relacionamentos (DER)
+## Diagrama de Entidades e Relacionamentos (DER) 📈
 _Futuramente, esta seção será preenchida com o DER do projeto._
 
-## Integrantes
+## Integrantes 👨‍👩‍👧‍👦
 - **Mariana**
     - ![Foto Mariana](#)
 - **Maria Eduarda**
@@ -126,7 +126,7 @@ _Futuramente, esta seção será preenchida com o DER do projeto._
 - **Vitor**
     - ![Foto Vitor](#)
 
-## Queries (Códigos SQL)
+## Queries (Códigos SQL) 💾
 ### Tabelas Gerais
 ```sql
 -- CRIAÇÃO DE TABELAS BASE
@@ -151,7 +151,7 @@ INSERT INTO especialistas (nome, especialidade) VALUES
 -- Insira os dados na tabela especialistas para que a tabela entrevistas possa ser criada
 
 INSERT INTO especialistas (nome, especialidade) VALUES
-('Andressa Bruscato', 'Mestre Bioquimica'),
+('Andressa Bruscato', 'Mestre Bioquímica'),
 ('João Borghi', 'Estudante SESI');
 
 -- Insira os dados na tabela especialistas para que a tabela noticias possa ser criada
@@ -218,7 +218,7 @@ CREATE TABLE contato (
         mensagem TEXT NOT NULL
 );
 
--- INSEÇÕES NAS TABELAS:
+-- INSERÇÕES NAS TABELAS:
 ...
 ```
 
