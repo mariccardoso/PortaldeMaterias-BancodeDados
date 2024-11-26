@@ -6,6 +6,3 @@ CREATE TABLE entrevistas (
 
     FOREIGN KEY (id_entrevistado) REFERENCES especialistas(id)
 )
-
-
-
