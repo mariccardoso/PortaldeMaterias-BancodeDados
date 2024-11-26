@@ -5,7 +5,7 @@ CREATE TABLE entrevistas (
     id_entrevistado INT NOT NULL,
 
     FOREIGN KEY (id_entrevistado) REFERENCES especialistas(id)
-)
+);
 
 INSERT INTO entrevistas (titulo, descricao, id_entrevistado) VALUES
 ('Tragetória Profissional de Andressa Bruscato', 'Andressa Bruscato é mestre em Bioquímica e conta um pouco sobre sua trajetória profissional.', 1),
