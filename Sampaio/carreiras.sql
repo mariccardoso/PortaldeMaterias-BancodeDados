@@ -2,12 +2,12 @@
 
 CREATE TABLE cursos(
     id SERIAL PRIMARY KEY,
-    curso VARCHAR(100) NOT NULL,
-    conexao_quimica VARCHAR(100) NOT NULL,
+    curso VARCHAR(200) NOT NULL,
+    conexao_quimica VARCHAR(200) NOT NULL,
     descricao TEXT NOT NULL,
-    habilidades_necessarias TEXT NOT NULL
+    habilidades_necessarias TEXT NOT NULL,
     url_externo VARCHAR(100) NOT NULL
-)
+);
 
 INSERT INTO cursos (curso, conexao_quimica, descricao, habilidades_necessarias, url_externo)
 VALUES (
