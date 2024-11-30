@@ -11,12 +11,12 @@ CREATE TABLE dicas (
 )
 
 -- Inserindo dados na tabela dicas
-INSERT INTO dicas (titulo, descricao, video_url, id_autor) VALUES
-('Método Pomodoro para Estudo Eficiente em Química', 'https://www.youtube.com/embed/YI9oxHGf6iE?si=TFyXYdKPSvv2M2_o', 3),
-('Laboratórios de Análises Químicas – O Que Esperar?', 'https://www.youtube.com/embed/vQoXojpZi3k?si=UF4WvEVGal4kXRx2', 4),
-('Memorize Conceitos Difíceis com Técnicas especificas', 'https://www.youtube.com/embed/eTLlzBIHOQU?si=NdaCyEVLQ7it0oJ_', 5),
-('Por Onde Começar em Química?', 'https://www.youtube.com/embed/4P9eSpy5OdI?si=ne9PreJqJ8i0wHIg', 6),
-('Entenda a Importância da Química no Cotidiano', 'https://www.youtube.com/embed/uMhJmoNlGz8?si=v_Z9IZLyUcUQJGq3', 7);
+INSERT INTO dicas (titulo, video_url, id_autor) VALUES
+('Método Pomodoro para Estudo Eficiente em Química', 'https://www.youtube.com/embed/YI9oxHGf6iE?si=TFyXYdKPSvv2M2_o', 1),
+('Laboratórios de Análises Químicas – O Que Esperar?', 'https://www.youtube.com/embed/vQoXojpZi3k?si=UF4WvEVGal4kXRx2', 2),
+('Memorize Conceitos Difíceis com Técnicas especificas', 'https://www.youtube.com/embed/eTLlzBIHOQU?si=NdaCyEVLQ7it0oJ_', 3),
+('Por Onde Começar em Química?', 'https://www.youtube.com/embed/4P9eSpy5OdI?si=ne9PreJqJ8i0wHIg', 4),
+('Entenda a Importância da Química no Cotidiano', 'https://www.youtube.com/embed/uMhJmoNlGz8?si=v_Z9IZLyUcUQJGq3', 5);
 
 
 UPDATE dicas 
@@ -42,7 +42,12 @@ WHERE id = 5;
 -- Consulta de todas as dicas
 SELECT * FROM dicas;
 
--- Consulta de dicas com nome e especialidade do autor
-SELECT d.titulo, d.descricao, d.video_url, e.nome, e.especialidade
+-- Consulta de dicas com nome e especialidade do autor - bonitinha
+SELECT d.titulo, d.video_url, e.nome, e.especialidade
 FROM dicas d
 JOIN especialistas e ON d.id_autor = e.id; 
+
+--consulta de dicas com nome e especialidade do autor
+SELECT d.titulo, d.descricao, d.video_url, e.nome, e.especialidade
+FROM dicas d
+JOIN especialistas e ON d.id_autor = e.id;
