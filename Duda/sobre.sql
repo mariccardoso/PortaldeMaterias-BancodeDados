@@ -3,12 +3,12 @@
 CREATE TABLE funcoes_scrum (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL
-)
+);
 
 CREATE TABLE integrantes (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    id_funcao VARCHAR(100) NOT NULL,
+    id_funcao INT NOT NULL,
     url_linkedin VARCHAR(100) NOT NULL,
     descricao TEXT,
     url_imagem TEXT NOT NULL,

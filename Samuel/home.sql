@@ -1,22 +1,27 @@
+-- FINALIZADO (INSERÇÃO DOS DADOS) --
 
+-- CRIAÇÃO DAS TABELAS --
+
+-- TABELA DE PÁGINAS DO PORTAL --
 CREATE TABLE paginas_portal (
     id SERIAL PRIMARY KEY,
     titulo VARCHAR(100) NOT NULL,
     url VARCHAR(100) NOT NULL
-)
+);
 
+-- TABELA DE FERRAMENTAS --
 CREATE TABLE ferramentas (
     id SERIAL PRIMARY KEY,
     ferramenta VARCHAR(100) NOT NULL,
     descricao TEXT NOT NULL,
-    url_img INT NOT NULL
-)
+    url_img TEXT NOT NULL
+);
 
-
+-- TABELA DE CONTATO --
 CREATE TABLE contato (
     id SERIAL PRIMARY KEY,
     nome_completo VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    email VARCHAR(320) NOT NULL,
     mensagem TEXT NOT NULL
 );
 
@@ -88,4 +93,3 @@ INSERT INTO contato (nome_completo, email, mensagem) VALUES
 ('Otávio Martins Ribeiro', 'otavio.ribeiro@exemplo.com', 'As entrevistas são muito inspiradoras.'),
 ('Patrícia Rodrigues Silva', 'patricia.silva@exemplo.com', 'Adorei a seção de carreiras.');
 -- TESTE:
-SELECT * FROM contato;
