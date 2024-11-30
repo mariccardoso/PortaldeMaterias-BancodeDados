@@ -13,12 +13,20 @@ TABLE integrantes
 TABLE ferramentas
 TABLE paginas_portal
 TABLE contato
+TABLE carreiras
 
 -- Atributos
 especialistas
     id SERIAL PRIMARY KEY
     nome VARCHAR(100) NOT NULL
     especialidade VARCHAR(100) NOT NULL
+
+carreiras
+    curso VARCHAR(100) NOT NULL
+    conexao_quimica VARCHAR(100) NOT NULL
+    descricao TEXT NOT NULL
+    habilidades_necessarias TEXT NOT NULL
+    url_externo VARCHAR(100) NOT NULL
 
 dicas
     id SERIAL PRIMARY KEY
@@ -112,3 +120,4 @@ Cada integrante deve ter uma função no scrum
 Cada página do portal deve ter um título e uma url
 Cada ferramenta deve ter um nome, uma descrição e uma url de imagem
 Cada contato deve ter um nome, um email e uma mensagem
+Cada curso deve ter um nome, uma conexão química, uma descrição, habilidades necessárias e uma url externa
