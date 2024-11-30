@@ -27,6 +27,20 @@ CREATE TABLE contato (
 
 -- INSEÇÕES NAS TABELAS:
 
+INSERT INTO paginas_portal (titulo, url) VALUES
+('Portal Pricipal', 'https://luschettini.github.io/site-portaleducacional/'),
+('Matematica', 'https://projeto-portal-matematica.vercel.app/'),
+('Portugues', 'https://lp-projeto.vercel.app/'),
+('História', 'https://site-historia-six.vercel.app/'),
+('Geografia', 'https://projeto-geografia.vercel.app/'),
+('Biologia', 'https://site-biologia-41g2.vercel.app/'),
+('Física', 'https://site-fisica.vercel.app/'),
+('Inglês', 'https://site-ingles-theta.vercel.app/'),
+('Filosfia', 'https://site-filosofia.vercel.app/'),
+('Sociologia', 'https://site-sociologia.vercel.app/'),
+('Artes', 'https://portal-noticias-html.vercel.app/');
+
+
 -- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS) - JÁ FORAM TESTADOS --
 INSERT INTO paginas_portal (titulo, url) VALUES 
 ('Inicio', 'index.html'),
@@ -79,4 +93,3 @@ INSERT INTO contato (nome_completo, email, mensagem) VALUES
 ('Otávio Martins Ribeiro', 'otavio.ribeiro@exemplo.com', 'As entrevistas são muito inspiradoras.'),
 ('Patrícia Rodrigues Silva', 'patricia.silva@exemplo.com', 'Adorei a seção de carreiras.');
 -- TESTE:
-SELECT * FROM contato;
