@@ -1,12 +1,3 @@
--- Insira os dados na tabela especialistas para que a tabela noticias possa ser criada
-
--- Inserindo especialistas para serem referenciados na tabela noticias
-INSERT INTO especialistas (nome, especialidade) VALUES
-('Especialista 01', 'Químico'),
-('Especialista 02', 'Biólogo'),
-('Especialista 03', 'Físico'),
-('Especialista 04', 'Matemático'),
-('Especialista 05', 'Engenheiro Químico');
 
 -- Insira os dados na tabela noticias para que a tabela media_noticia possa ser criada
 CREATE TABLE noticias (
