@@ -34,11 +34,5 @@ INSERT INTO especialistas (nome, especialidade) VALUES
 ('Cristina Alves', 'Professora de Química'),
 ('Alexandre Rodrigues', 'Professor de Quimica');
 
--- Insira os dados na tabela especialistas para que a tabela noticias possa ser criada
-
-INSERT INTO especialistas (nome, especialidade) VALUES
-('Especialista 01', 'Químico'),
-('Especialista 02', 'Biólogo'),
-('Especialista 03', 'Físico'),
-('Especialista 04', 'Matemático'),
-('Especialista 05', 'Engenheiro Químico');
+-- consultando a tabela especialistas
+SELECT * FROM especialistas;

@@ -81,6 +81,24 @@ IA no Desenvolvimento de Novos Compostos e Materiais Funcionais: O uso de inteli
 Tecnologias Químicas que Visam Melhorar a Qualidade de Vida e a Produção Alimentar: Além da sustentabilidade, algumas das tecnologias emergentes têm aplicação direta na medicina e na agricultura, como novos compostos para tratamentos de doenças e métodos para proteger lavouras de forma mais natural e segura. Esses avanços podem ter implicações significativas para a qualidade de vida e a segurança alimentar global.', 10);
 
 INSERT INTO noticias (titulo, subtitulo, breve_descricao, conteudo, id_autor) VALUES
+('Inovacoes na Quimica', 'Tecnologias Quimicas', 
+'E sempre bom saber as novas tecnologias em quimicas, para sempre estar atualizado, principalmente a quem fara faculdade da area.', 
+'Essas inovacoes prometem impactar areas como sustentabilidade, saude e quimica industrial. Entre as tecnologias destacadas estao novos metodos de reciclagem, quimica verde e inteligencia artificial aplicada ao design molecular, temas cada vez mais presentes em vestibulares e com impacto direto na ciencia e no meio ambiente.
+
+O uso da inteligencia artificial mudou completamente o mundo, no sentido bom e ruim. A IA ajuda pessoas a fazerem pesquisas mais rapidamente e coisas do tipo, porem tem gente que usa pro mal, como criar audios, videos e fotos fakes.
+
+O que isso muda na quimica
+Confira agora 5 topicos sobre:
+
+Tecnologias que Promovem a Reducao de Residuos: Entre as tecnologias listadas, muitas abordam a reducao de residuos e poluicao, com destaque para processos de fabricacao mais limpos e que minimizam os subprodutos. Essas inovacoes refletem a tendencia da quimica verde, que busca minimizar o impacto ambiental.
+Materiais e Processos que Reduzem o Uso de Compostos Nocivos: A IUPAC destacou o desenvolvimento de materiais biodegradaveis e processos que substituem substancias toxicas, essenciais para reduzir a pegada ecologica da industria. Essas tecnologias abordam uma demanda crescente por materiais sustentaveis e menos poluentes.
+Transformando Residuos Quimicos em Novos Produtos de Valor: As novas tecnologias tambem incluem metodos avancados de reciclarem, que permitem a recuperacao de substancias quimicas para serem reutilizadas em novos produtos, promovendo um ciclo mais sustentavel e eficiente.
+IA no Desenvolvimento de Novos Compostos e Materiais Funcionais: O uso de inteligencia artificial para acelerar o design de moleculas e prever reacoes quimicas e uma das grandes promessas da area. A IA permite que quimicos testem e desenvolvam novos materiais de forma mais rapida e precisa, o que pode revolucionar setores como farmacologia e ciencia de materiais.
+Tecnologias Quimicas que Visam Melhorar a Qualidade de Vida e a Producao Alimentar: Alem da sustentabilidade, algumas das tecnologias emergentes tem aplicacao direta na medicina e na agricultura, como novos compostos para tratamentos de doencas e metodos para proteger lavouras de forma mais natural e segura. Esses avancos podem ter implicacoes significativas para a qualidade de vida e a seguranca alimentar global.', 
+10);
+
+
+INSERT INTO noticias (titulo, subtitulo, breve_descricao, conteudo, id_autor) VALUES
 ('Aplicação de inteligências artificiais', 'Aplicação da IA', 
 'O Prêmio Nobel de Química de 2024 foi concedido por avanços na previsão de estruturas de proteínas por meio de inteligência artificial, uma inovação que promete revolucionar o design de medicamentos personalizados.',
 'Com IA e aprendizado de máquina, o programa AlphaFold, do Google DeepMind, alcançou uma precisão de mais de 95% em prever a estrutura tridimensional de proteínas, o que facilita a compreensão de doenças complexas e a criação de tratamentos direcionados.
@@ -110,16 +128,20 @@ Como Essas Baterias Funcionam: As baterias de última geração e à explicaçã
 A Importância da Sustentabilidade para o Futuro: Esse ponto ressalta a importância de desenvolver soluções energéticas sustentáveis para o futuro. No contexto dos vestibulares, a sustentabilidade é cada vez mais relevante, e a química tem um papel essencial ao contribuir para novas fontes de energia que sejam menos poluentes.
 Aplicações em Veículos Elétricos e Armazenamento Residencial: As aplicações das baterias em tecnologias de uso cotidiano, como veículos elétricos e sistemas de armazenamento de energia para residências. Em exames vestibulares, esse tema ajuda a entender como os avanços em química e engenharia de materiais impactam a vida cotidiana e as soluções de sustentabilidade para a sociedade.', 12);
 
+
 INSERT INTO noticias (titulo, subtitulo, breve_descricao, conteudo, id_autor) VALUES
-('Potencial de captura de carbono', 'Novo Método de Emissões de Gases', 
-'A técnica promete reduzir significativamente as emissões de gases do efeito estufa, contribuindo para o combate às mudanças climáticas.',
-'A técnica promete reduzir significativamente as emissões de gases do efeito estufa, contribuindo para o combate às mudanças climáticas. Com os avanços na engenharia de materiais para baterias e células de combustível, cientistas estão desenvolvendo fontes de energia mais sustentáveis e eficientes.',
-'Como funciona essa forma de reduzir os gases?
-Uma Solução Sustentável para o Clima: a captura de carbono pode mitigar o impacto ambiental, reduzindo os níveis de CO₂ e contribuindo para a estabilidade climática.
-A Química do Carbono: Foca nos processos químicos que permitem a captura e o armazenamento eficiente do CO₂, facilitando muito a captura e reduzindo gastos e possíveis poluentes do ambiente e do ar.
-Aplicações Industriais: Como essa tecnologia é especialmente relevante para setores industriais que emitem grandes quantidades de carbono.
-Impacto Ambiental e Econômico: Aborda os benefícios econômicos e ambientais da tecnologia, como redução de multas por emissões e melhoria na imagem das empresas.
-O Futuro da Captura de Carbono: Perspectivas de uso global da tecnologia e de sua evolução, com novos processos e aplicações. É uma nova grande tendência para empresas e indústrias diminuir os efeitos do efeito estufa.', 8);
+('Potencial de captura de carbono', 'Novo Metodo de Emissoes de Gases', 
+'A tecnica promete reduzir significativamente as emissoes de gases do efeito estufa, contribuindo para o combate as mudancas climaticas.',
+'Como funciona essa forma de reduzir os gases:
+Uma Solucao Sustentavel para o Clima: A captura de carbono pode mitigar o impacto ambiental, reduzindo os niveis de CO2 e contribuindo para a estabilidade climatica.
+A Quimica do Carbono: FOCA nos processos quimicos que permitem a captura e o armazenamento eficiente do CO2, facilitando muito a captura e reduzindo gastos e possiveis poluentes do ambiente e do ar.
+Aplicacoes Industriais: como essa tecnologia e especialmente relevante para setores industriais que emitem grandes quantidades de carbono.
+Impacto Ambiental e Economico: Aborda Os Beneficios Economicos e Ambientais da Tecnologia, como reducao de multas por emissoes e melhoria na imagem das empresas.
+O Futuro da Captura de Carbono: Perspectivas de Uso Global da Tecnologia e de Sua Evolucao, com novos processos e aplicacoes. E uma nova grande tendencia para empresas e industrias diminuir os efeitos do efeito estufa.', 
+8);
+
+
+UPDATE noticias SET conteudo = 
 
 -- Inserindo imagens das notícias
 INSERT INTO media_noticia (media_type, imagem_url, id_noticia) VALUES
@@ -138,4 +160,17 @@ INSERT INTO media_noticia (media_type, imagem_url, id_noticia) VALUES
 ('imagem', 'https://static.wixstatic.com/media/78c2c6_ef7a875cca7e423d9dedbc566bb137eb~mv2.png/v1/fill/w_568,h_384,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/78c2c6_ef7a875cca7e423d9dedbc566bb137eb~mv2.png', 7),
 ('imagem', 'https://petrosolgas.com.br/wp-content/uploads/2024/04/Fabricante-da-China-inicia-producao-da-primeira-celula-de-bateria-do-mundo-capaz-de-durar-15-anos.jpg', 7),
 ('imagem', 'https://blog.coontrol.com.br/wp-content/uploads/2020/08/emissoes-atmosfericas-entenda-a-relacao-tipo-de-combustivel-x-emissao-de-gases.webp', 8),
-('imagem', 'https://content.nationalgeographic.pt/medio/2023/09/14/emissoes-de-co2_d150b6ce_230914151738_1280x853.jpg', 8)
+('imagem', 'https://content.nationalgeographic.pt/medio/2023/09/14/emissoes-de-co2_d150b6ce_230914151738_1280x853.jpg', 8);
+
+SELECT n.titulo, n.subtitulo, n.breve_descricao, n.conteudo, a.nome, a.especialidade, mn.imagem_url
+FROM noticias n
+JOIN autores a ON n.id_autor = a.id
+JOIN media_noticia mn ON n.id = mn.id_noticia;
+
+
+-- select curto
+
+SELECT n.titulo, n.subtitulo, a.nome, a.especialidade, mn.imagem_url
+FROM noticias n
+JOIN especialistas a ON n.id_autor = a.id
+JOIN media_noticia mn ON n.id = mn.id_noticia;
