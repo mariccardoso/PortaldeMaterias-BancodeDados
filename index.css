@@ -876,8 +876,7 @@ body {
       font-size: 2rem;
       text-align: center;
     }
-  
-    /* Responsividade para a seção principal - Texto de introdução */
+      /* Responsividade para a seção principal - Texto de introdução */
     .section-text {
       width: 30vh;
       font-size: 1rem;
