@@ -170,7 +170,7 @@ JOIN media_noticia mn ON n.id = mn.id_noticia;
 
 -- select curto
 
-SELECT n.titulo, n.subtitulo, a.nome, a.especialidade, mn.imagem_url
+SELECT n.titulo, n.subtitulo, a.nome
 FROM noticias n
 JOIN especialistas a ON n.id_autor = a.id
 JOIN media_noticia mn ON n.id = mn.id_noticia;

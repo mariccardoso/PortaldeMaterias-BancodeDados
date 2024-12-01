@@ -43,7 +43,7 @@ WHERE id = 5;
 SELECT * FROM dicas;
 
 -- Consulta de dicas com nome e especialidade do autor - bonitinha
-SELECT d.titulo, d.video_url, e.nome, e.especialidade
+SELECT d.titulo, e.nome
 FROM dicas d
 JOIN especialistas e ON d.id_autor = e.id; 
 
