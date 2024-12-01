@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Portal de Matérias</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Importação das páginas de estilo (CSS) -->
+    <link rel="stylesheet" href='./index.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Importação do ícone do SENAI -->
+    <link rel="shortcut icon" type="imagex/png" href="https://www.sp.senai.br/favicon.ico" />
+</head>
+
+<body class="fade-out">
+    <!------------ Cabeçalho da página ------------>
+    <header>
+        <!-- Logo do SENAI -->
+        <a href="/index.html">
+            <img src="https://portal-de-materias.vercel.app/assets/img/logo-senai.png" class="logo"
+                alt="Logo do SENAI" />
+        </a>
+
+        <!------------ Menu de navegação ------------>
+        <ul class="navlist">
+            <li><a href="index.html" id="nav-home">Banco de dados</a></li>
+            <li><a href="https://quimica.projetosds.tech/" id="nav-home">Portal de Quimica</a></li>
+        </ul>
+
+        <!-- Botão de contato -->
+        <div class="right-header">
+            <a href="index.html" class="btn" id="btn-entre-em-contato">
+                Entre em contato <i class="bx bx-message-dots"></i>
+            </a>
+
+            <!-- Ícone do menu mobile -->
+            <section class="menu-icon">
+                <button class="bar"></button>
+            </section>
+        </div>
+    </header>
+    <!------------ Fim do cabeçalho ------------>
+
+    <!------------ Seção principal da página ------------>
+    <section class="container-main animate_animated animate_bounceIn">
+        <!-- Texto de boas-vindas -->
+        <div class="container-text">
+            <a class="back" href="https://luschettini.github.io/site-portaleducacional/" target="_blank">
+                <img src="https://portal-de-materias.vercel.app/assets/img/left-arrow.png" alt="Voltar" />
+                <h4>Voltar ao Portal Principal</h4>
+            </a>
+
+            <h1 class="section-title">Banco de Dados <a href="https://quimica.projetosds.tech/">Portal
+                    de Quimica</a></h1>
+            <p class="section-text">
+                O banco de dados do Portal de Química é composto por diversos
+                materiais didáticos, como vídeos, textos e imagens, que podem ser utilizados para aprimorar o
+                aprendizado dos
+                usuários. Para acessar o MER e o DER do Portal de Química, clique
+                nos botões abaixo.
+            </p>
+
+            <!-- Botão de acesso às notícias -->
+            <section class="buttons" target="_blank">
+                <a href="./A - MER E DER/DER - PDM.pdf" target="_blank" class="button" download=""><i
+                        class='bx bxs-download'></i> Download DER</a>
+                <a href="./A - MER E DER/MER - Projeto Portal de Matérias.pdf" target="_blank" class="button"
+                    download=""><i class='bx bxs-download'></i> Download MER</a>
+            </section>
+        </div>
+
+        <!-- Imagem ilustrativa -->
+        <div class="container-img">
+            <img src="https://portal-de-materias.vercel.app/assets/img/main-img.png   "
+                alt="material quimico borbulhando" class="home-illustration" />
+        </div>
+    </section>
+    <!------------ Fim da seção principal ------------>
+
+    <section class="cards">
+        <article class="card-buttons">
+            <div class="developers-container">
+                <h2 class="button-developers">Nosso DER</h2>
+                <h5 class="developers-a">Banco de Dados</p>
+            </div>
+            <div class="developers-container">
+                <p class="developers-a">Confira o nosso Diagrama Entidade-Relacionamento aplicado ao nosso banco de
+                    dados</p>
+            </div>
+        </article>
+        <img src="./A - MER E DER/Portal de Materias - v2 (1).jpg" alt="Vários potes de veneno" class="card-image" />
+    </section>
+
+    <!------------ Sessão de contato ------------>
+    <section class="cards-section" id="contate-nos">
+        <hgroup id="contate-nos">
+            <div class="contate-nos">
+                <h2>Contato</h2>
+            </div>
+            <h3>
+                Fale conosco ou com o
+                <a href="https://www.sp.senai.br/" target="_blank">SENAI<img
+                        src="https://portal-de-materias.vercel.app/assets/img/arrow.png" alt="Seta" /></a>
+            </h3>
+            <p>Entre em contato com os desenvolvedores do Portal de Química!</p>
+            <p>Tem alguma dúvida, sugestão ou crítica? Fale conosco!</p>
+        </hgroup>
+
+        <!-- Div de Contato com os Desenvolvedores -->
+        <div class="card-contact-desenvolvedores">
+            <section class="section-content">
+                <div class="developers-container">
+                    <h1 class="button-developers">Contato:</h1>
+                    <a class="developers-a" href="pages/sobre.html">desenvolvedores</a>
+                </div>
+                <form action="https://formsubmit.co/marianacardoso.tds2.senai@gmail.com" method="POST" data-form>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo" required maxlength="100"
+                        class="input-dev" />
+
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" class="input-dev" />
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required
+                        class="textarea-dev"></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://portal-de-materias.vercel.app/pages/obrigado.html">
+                    <button class="button-contact" type="submit" data-button>Enviar mensagem</button>
+                </form>
+
+            </section>
+
+            <section class="section-img">
+                <img src="https://portal-de-materias.vercel.app/assets/img/contact-ilustration.png"
+                    alt="Imagem Ilustrativa" class="img-section-cards" />
+            </section>
+        </div>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="https://www.sp.senai.br/" target="_blank">
+                    <img src="https://portal-de-materias.vercel.app/assets/img/logo-senai.png" alt="Logo do SENAI" />
+                </a>
+            </div>
+            <div class="footer-contact">
+                <p>Contato: <a href="mailto:contato@senai.br">contato@senai.br</a></p>
+                <p>Telefone: (19) 3829-7800</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/school/senaisp/" target="_blank"><img
+                        src="https://portal-de-materias.vercel.app/assets/img/linkedin.png" alt="LinkedIn" /></a>
+                <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img
+                        src="https://portal-de-materias.vercel.app/assets/img/face.png" alt="Facebook" /></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SENAI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/menu_Java.js"></script>
+    <script src="assets/js/animation-pages.js"></script>
+
+    <!-- Script (unico desta página) para rolar até a seção de contato -->
+    <script>
+        document
+            .getElementById("btn-entre-em-contato")
+            .addEventListener("click", function (event) {
+                event.preventDefault();
+                document
+                    .getElementById("contate-nos")
+                    .scrollIntoView({ behavior: "smooth" });
+            });
+    </script>
+</body>
+
+</html>

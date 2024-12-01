@@ -76,7 +76,6 @@ questoes
 
 funcoes_scrum
     id SERIAL PRIMARY KEY
-    id_integrante INT NOT NULL
     funcao VARCHAR(100) NOT NULL
 
 integrante

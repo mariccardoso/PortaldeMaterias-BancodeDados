@@ -1,10 +1,18 @@
--- PRONTA, SEM ALTERAÇÕES
 
+-- CRIAÇÃO DAS TABELA DE FUNÇÕES
 CREATE TABLE funcoes_scrum (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL
 );
 
+-- INSERTS: TABELA DE FUNÇÕES
+INSERT INTO funcoes_scrum (nome) VALUES 
+('Product Owner'),
+('Scrum Master'),
+('Equipe de desenvolvimento');
+
+
+-- CRIAÇÃO DA TABELA DE INTEGRANTES
 CREATE TABLE integrantes (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -15,14 +23,6 @@ CREATE TABLE integrantes (
 
     FOREIGN KEY (id_funcao) REFERENCES funcoes_scrum(id)
 );
-
-
--- INSERTS: TABELA DE FUNÇÕES
-
-INSERT INTO funcoes_scrum (nome) VALUES 
-('Product Owner'),
-('Scrum Master'),
-('Equipe de desenvolvimento');
 
 -- INSERTS: TABELA DE INTEGRANTES
 
@@ -39,7 +39,12 @@ UPDATE integrantes SET descricao = 'Estudante do SENAI, dedicou- se ao desenvolv
 UPDATE integrantes SET descricao = 'Estudante do SENAI, desempenhou um papel crucial na documentação do projeto. Sua capacidade de organização foi indispensável para assegurar que o foco e a eficiência fossem mantidos durante todas as etapas do desenvolvimento.' WHERE id = 4;
 UPDATE integrantes SET descricao = 'Estudante do SENAI, mostrou empenho e comprometimento ao longo de todo o projeto. Sua dedicação foi essencial para o sucesso das entregas, contribuindo significativamente para o bom desempenho e a integração da equipe.' WHERE id = 5;
 
-SELECT i.nome, f.nome, i.url_linkedin, i.url_imagem
+
+
+
+-- CONSULTA PARA EXIBIR OS DADOS
+
+SELECT i.nome, f.nome, i.url_linkedin
 FROM funcoes_scrum f
 JOIN integrantes i ON f.id = i.id_funcao;
 
