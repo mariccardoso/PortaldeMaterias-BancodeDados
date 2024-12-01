@@ -828,6 +828,7 @@ body {
       width: 80%;
       height: 110vh;
     }
+
   
     .container-main p {
       font-size: 2vh;
@@ -841,7 +842,12 @@ body {
     .back img {
       width: 4%;
       height: auto;
-  
+    }
+
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
     /* Responsividade para a seção principal */
     .container-text,
@@ -856,10 +862,13 @@ body {
   
     /* Responsividade para as imagens (remoção delas) */
     .container-img img,
-    .img-section-cards,
-    .card-image {
+    .img-section-cards {
       width: 0;
       height: auto;
+    }
+
+    .img-section-cards:hover{
+      transform: scale(1.5);
     }
   
     /* Responsividade para a seção principal - Título */
