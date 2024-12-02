@@ -40,7 +40,6 @@ INSERT INTO paginas_portal (titulo, url) VALUES
 ('Sociologia', 'https://site-sociologia.vercel.app/'),
 ('Artes', 'https://portal-noticias-html.vercel.app/');
 
-
 -- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 1 (COM CAMINHO DAS PASTAS) - JÁ FORAM TESTADOS --
 INSERT INTO paginas_portal (titulo, url) VALUES 
 ('Inicio', 'index.html'),
@@ -52,6 +51,7 @@ INSERT INTO paginas_portal (titulo, url) VALUES
 ('Entrevistas', '/pages/entrevista.html');
 -- TESTE:
 SELECT * FROM paginas_portal;
+ 
 -- INSERTS - PÁGINAS DO PORTAL - OPÇÃO 2 (COM O URL DA PÁGINA) - JÁ FORAM TESTADOS --
 INSERT INTO paginas_portal (titulo, url) VALUES 
 ('Inicio', 'https://portal-de-materias.vercel.app/'),
@@ -93,3 +93,14 @@ INSERT INTO contato (nome_completo, email, mensagem) VALUES
 ('Otávio Martins Ribeiro', 'otavio.ribeiro@exemplo.com', 'As entrevistas são muito inspiradoras.'),
 ('Patrícia Rodrigues Silva', 'patricia.silva@exemplo.com', 'Adorei a seção de carreiras.');
 -- TESTE:
+
+-- CONSULTAS --
+
+-- CONSULTA 1 - PÁGINAS DO PORTAL --
+SELECT * FROM paginas_portal;
+
+-- CONSULTA 2 - FERRAMENTAS --
+SELECT * FROM ferramentas;
+
+-- CONSULTA 3 - CONTATO --
+SELECT * FROM contato;
