@@ -882,43 +882,6 @@ body {
       font-size: 1rem;
     }
   
-    /* ---------- Responsividade para a seção de navegação para outras páginas ---------- */
-    .subject-nav {
-      height: auto;
-      padding: 1rem;
-    }
-  
-    .subject-nav h2 {
-      font-size: 1.3rem;
-      width: 80%;
-      padding: 0.8rem;
-    }
-  
-    .subject-nav p {
-      font-size: 1rem;
-      width: 80%;
-    }
-  
-    .subject-nav ul {
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-  
-    .subject-nav ul li {
-      font-size: 1rem;
-    }
-  
-    .materias-items{
-      flex-wrap: wrap;
-      gap: 1.1rem;
-    }
-  
-  
-    .card-item-materias{
-      width: 30%;
-    }
-  
-  
     /* ---------- Responsividade para a seção de logotipos ---------- */
     .logotipos {
       gap: 5vh;
