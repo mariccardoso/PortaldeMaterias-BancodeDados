@@ -1,0 +1,1302 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+  --grey: #f3f3f3;
+  /* Branco padrão */
+  --vermelho: #e30613;
+  /* Vermelho padrão */
+  --dark: #191a23;
+  /* Preto 01 padrão */
+  --black: #000;
+  /* Preto 02 padrão */
+  --gap-large: 40px;
+  /* Espaçamento grande entre os itens (por exemplo, em desktops) */
+  --gap-small: 20px;
+  /* Espaçamento pequeno entre os itens (por exemplo, em dispositivos móveis) */
+  --font-size: 20px;
+  /* Tamanho da fonte padrão */
+  --border-radius: 10px;
+  /* Raio da borda para bordas arredondadas */
+  --transition-speed: 0.3s;
+  /* Velocidade da transição de cor para suavizar mudanças */
+  --contact: #89898931;
+  /* Cor de fundo para a seção de contato */
+  --teste1: #eeff00;
+  /* Cores de teste */
+  --teste2: #ff00ee;
+  --teste3: #00eeff;
+  --teste4: #00ff00;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estrutura da Header*/
+header {
+  padding: 1.5rem 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  transition: 0.3s;
+  background: rgba(245, 245, 245, 0.342);
+  box-shadow: 0px 23px 26px -10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Meu nome (Logo)*/
+header .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/*Barra de Navegação*/
+ul.navlist {
+  display: flex;
+}
+
+.navlist li {
+  margin: 0 1rem;
+}
+
+.navlist li a {
+  display: inline-flex;
+  /* Alinha os itens em linha */
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--dark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  list-style-type: none;
+  transition: 0.4s ease;
+}
+
+.navlist li a:hover {
+  color: var(--vermelho);
+  text-decoration: underline;
+}
+
+/*Estilos para quando passar o mouse e quando o script tiver ativo*/
+.navlist li a.active {
+  background: var(--gradient-color-bg);
+  background-clip: text;
+}
+
+/* Estios para os itens da direita*/
+.right-header {
+  display: flex;
+  align-items: center;
+  /* Alinhamento vertical */
+  justify-content: end;
+  /* Alinhamento horizontal */
+  grid-gap: 0.8rem;
+}
+
+.btn {
+  background: var(--vermelho);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-box .d-CV:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+/* ================ Estilos para o menu Hamburguer (responsividade)========================*/
+.menu-icon {
+  position: relative;
+  display: block;
+  /* Exibe em bloco */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  /* Muda o cursor */
+}
+
+.menu-icon .bar,
+.menu-icon::after,
+.menu-icon::before {
+  content: "";
+  display: none;
+  /* Oculta */
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  /* Borda arredondada */
+  background: #000;
+  margin: 6px 0;
+  /* Margem */
+  transition: 0.4s;
+}
+
+.menu-icon.active::before {
+  transform: rotate(-45deg) translate(-6px, 6px);
+  /* Rotaciona */
+}
+
+.menu-icon.active::after {
+  transform: rotate(45deg) translate(-8px, -8px);
+  /* Rotaciona */
+}
+
+.menu-icon.active .bar {
+  opacity: 0;
+}
+
+/* Estilos para o corpo da página */
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos para a animação de transição */
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-out-active {
+  opacity: 0;
+}
+
+/* ---------- Barra de navegação para as outras 11 páginas de matérias ---------- */
+.subject-nav {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  margin-top: 6rem;
+  gap: 2rem;
+  margin: 20vh;
+}
+
+.subject-nav p {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark);
+  width: 50%;
+  text-align: center;
+}
+
+.subject-nav h2 {
+  border: none;
+  padding: 20px 35px;
+  align-items: flex-start;
+  border-radius: 14px;
+  background: var(--vermelho);
+  color: var(--grey);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  transition: var(--transition-speed);
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+  width: 20%;
+}
+
+.subject-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+.subject-nav ul li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: var(--transition-speed);
+}
+
+.subject-nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.subject-nav ul li a {
+  color: var(--dark);
+  transition: var(--transition-speed);
+}
+
+.subject-nav ul li a:hover {
+  text-decoration: underline;
+  color: var(--vermelho);
+}
+
+.materias-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 100% !important;
+  margin-top: 5vh;
+}
+
+.materias-items a {
+  color: var(--dark);
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-item-materias {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  height: auto;
+  gap: 1rem;
+  transition: transform var(--transition-speed);
+  /* Adiciona a transição para o efeito de hover e saída */
+}
+
+.card-item-materias:hover {
+  transform: scale(1.2);
+  /* Aumenta o card ao passar o mouse */
+}
+
+.card-item-materias img {
+  width: 30%;
+}
+
+/* ---------- Estilos para a seção principal ---------- */
+.back {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--dark);
+  transition: var(--transition-speed);
+}
+
+.back img {
+  width: 3%;
+  height: auto;
+}
+
+.back:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.container-main {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  margin-top: 8rem;
+}
+
+.container-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  text-align: justify;
+}
+
+.section-title a {
+  color: var(--vermelho);
+  transition: var(--transition-speed);
+}
+
+.section-title a:hover {
+  text-decoration: underline;
+}
+
+.container-img {
+  display: flex;
+  width: 40%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-img img {
+  width: 80%;
+  height: auto;
+}
+
+/* ----- Estilos para botões ----- */
+.button {
+  border: none;
+  padding: 20px 35px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  background: var(--vermelho);
+  color: var(--grey);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  transition: var(--transition-speed);
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
+}
+
+/* ----- Estilos para títulos e textos ----- */
+.section-title {
+  margin-top: 25px;
+  color: var(--dark);
+  font-family: Montserrat;
+  font-size: 61px;
+  font-weight: 500;
+  text-align: left;
+  align-self: stretch;
+}
+
+.section-text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* ---------- Estilos para a seção de logotipos ---------- */
+.logotipos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5vh;
+  background-color: #fff;
+  width: 90%;
+  height: 60%;
+  margin-bottom: 1rem;
+}
+
+.logotipo {
+  width: 50%;
+}
+
+.logotipos-introduction {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  width: 80%;
+}
+
+.logotipos-title {
+  color: var(--dark);
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  align-self: stretch;
+}
+
+.logotipos-subtitle {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 700px;
+}
+
+.logotipos-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* Estilos para os cards */
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 30vh;
+  transition: transform var(--transition-speed);
+}
+
+.card-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.card-item:hover {
+  transform: scale(1.1);
+}
+
+.card-item a p {
+  font-family: Montserrat;
+  width: 80%;
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+
+  border-radius: 2vh;
+  padding: 1.5vh;
+  font-weight: 450;
+  color: var(--dark);
+}
+
+/* Estilos para a seção de cartões */
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cards {
+  width: 90%;
+  height: auto;
+  border-radius: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding: 50px;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  max-width: 100%;
+  border-radius: 3vh;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 10vh;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 5vh;
+}
+
+hgroup h3 {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+hgroup h3 a {
+  color: var(--vermelho);
+}
+
+hgroup p {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+
+/* ---------- Sessão de contato - Desenvolvedores ---------- */
+.card-contact-desenvolvedores {
+  display: flex;
+  background-color: var(--contact);
+  width: 90%;
+  border-radius: 3vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 10vh;
+}
+
+.developers-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  height: 40rem;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  height: 20%;
+}
+
+.button-developers {
+  padding: 10px 25px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  background: var(--vermelho);
+  color: var(--grey);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.developers-container h5 {
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+/* Estilos para a seção de contato */
+.contate-nos {
+  padding: 20px 35px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  background: var(--vermelho);
+  color: var(--grey);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 5px;
+  transition: var(--transition-speed);
+}
+
+.contate-nos:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
+}
+
+.section-content {
+  width: 60%;
+  height: auto;
+  border-radius: 3vh 0vh 0vh 3vh;
+  padding: 5vh 15vh 5vh 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Espaçamento entre os inputs */
+.section-content .input-dev {
+  margin-bottom: 3vh;
+  color: var(--black);
+}
+
+.section-content label {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 80vh;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  margin-top: 5%;
+}
+
+.section-img {
+  width: 40%;
+  height: auto;
+  border-radius: 0vh 3vh 3vh 0vh;
+  display: flex;
+  align-items: center;
+}
+
+.img-section-cards {
+  display: flex;
+  width: 100%;
+}
+
+.input-dev {
+  width: 60%;
+  height: 7vh;
+  border-radius: 1vh;
+  border: 2px solid black;
+  margin-top: 1vh;
+  padding-left: 3vh;
+  font-size: 0.8rem;
+}
+
+.textarea-dev {
+  width: 60%;
+  height: 25vh;
+  border-radius: 2vh;
+  border: 2px solid black;
+  margin-top: 1vh;
+  padding-left: 3vh;
+  padding-top: 7px;
+  font-size: 0.9rem;
+}
+
+.button-contact {
+  width: 70%;
+  height: 8vh;
+  border-radius: 2vh;
+  background-color: var(--black);
+  color: var(--grey);
+  font-family: "Space Grotesk";
+  font-size: 2.3vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.3vh;
+  margin-top: 1vh;
+  border: none;
+  margin-top: 4vh;
+  transition: var(--transition-speed);
+  padding: 1vh;
+}
+
+.button-contact:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
+}
+
+/* ---------- Estilos para o rodapé ---------- */
+.footer {
+  background-color: black;
+  color: var(--grey);
+  padding: 2rem 0;
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-logo img {
+  width: 140px;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li a {
+  color: var(--grey);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.footer-links ul li a:hover {
+  color: var(--vermelho);
+  display: flex;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+}
+
+.footer-contact p a {
+  color: var(--vermelho);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.footer-social a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  transition: transform var(--transition-speed);
+}
+
+.footer-social a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid var(--grey);
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+/* ---------- Sessão de contato - Desenvolvedores ---------- */
+.card-contact-desenvolvedores {
+  display: flex;
+  background-color: var(--contact);
+  width: 80%;
+  height: 100%;
+  border-radius: 3vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 10vh;
+}
+
+.developers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  height: 40rem;
+  gap: 1rem;
+  height: 20%;
+}
+
+.button-developers {
+  padding: 10px 25px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  background: var(--vermelho);
+  color: var(--grey);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.developers-a {
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 5vh;
+}
+
+hgroup h3 {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+hgroup h3 a {
+  color: var(--vermelho);
+}
+
+hgroup p {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+/* Estilos para a seção de contato */
+.contate-nos {
+  padding: 20px 35px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 14px;
+  background: var(--vermelho);
+  color: var(--grey);
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 10vh;
+  transition: var(--transition-speed);
+}
+
+.contate-nos:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
+}
+
+.section-content {
+  width: 60%;
+  height: auto;
+  border-radius: 3vh 0vh 0vh 3vh;
+  padding: 5vh 15vh 5vh 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Espaçamento entre os inputs */
+.section-content .input-dev {
+  margin-bottom: 3vh;
+  color: var(--black);
+}
+
+.section-content label {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+form {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 80vh;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  margin-top: 5%;
+}
+
+.section-img {
+  width: 40%;
+  height: auto;
+  border-radius: 0vh 3vh 3vh 0vh;
+  display: flex;
+  align-items: center;
+}
+
+.img-section-cards {
+  display: flex;
+  width: 100%;
+}
+
+.input-dev {
+  width: 60%;
+  height: 7vh;
+  border-radius: 1vh;
+  border: 2px solid black;
+  margin-top: 1vh;
+  padding-left: 3vh;
+  font-size: 0.8rem;
+}
+
+.textarea-dev {
+  width: 60%;
+  height: 25vh;
+  border-radius: 2vh;
+  border: 2px solid black;
+  margin-top: 1vh;
+  padding-left: 3vh;
+  padding-top: 7px;
+  font-size: 0.9rem;
+}
+
+.button-contact {
+  width: 70%;
+  height: 8vh;
+  border-radius: 2vh;
+  background-color: var(--black);
+  color: var(--grey);
+  font-family: "Space Grotesk";
+  font-size: 2.3vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.3vh;
+  margin-top: 1vh;
+  border: none;
+  margin-top: 4vh;
+  transition: var(--transition-speed);
+  padding: 1vh;
+}
+
+.button-contact:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  transform: scale(1.1);
+}
+
+/* ---------- Estilos de responsividade - celulares ---------- */
+@media (max-width: 768px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ---------- Responsividade para a seção principal ---------- */
+  .container-main {
+    margin-top: 3rem;
+    flex-direction: column;
+    font-size: 1.5vh;
+    width: 80%;
+    height: 110vh;
+  }
+
+
+  .container-main p {
+    font-size: 2vh;
+  }
+
+  .back {
+    width: 70%;
+    margin-left: -12vh;
+  }
+
+  .back img {
+    width: 4%;
+    height: auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Responsividade para a seção principal */
+  .container-text,
+  .container-img {
+    width: 90%;
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+    margin-top: 40vh;
+    gap: 4rem;
+  }
+
+  /* Responsividade para as imagens (remoção delas) */
+  .container-img img,
+  .img-section-cards {
+    width: 0;
+    height: auto;
+  }
+
+  .img-section-cards:hover {
+    transform: scale(1.5);
+  }
+
+  /* Responsividade para a seção principal - Título */
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Responsividade para a seção principal - Texto de introdução */
+  .section-text {
+    width: 30vh;
+    font-size: 1rem;
+  }
+
+  /* ---------- Responsividade para a seção de navegação para outras páginas ---------- */
+  .subject-nav {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .subject-nav h2 {
+    font-size: 1.3rem;
+    width: 80%;
+    padding: 0.8rem;
+  }
+
+  .subject-nav p {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .subject-nav ul {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .subject-nav ul li {
+    font-size: 1rem;
+  }
+
+  .materias-items {
+    flex-wrap: wrap;
+    gap: 1.1rem;
+  }
+
+
+  .card-item-materias {
+    width: 30%;
+  }
+
+
+  /* ---------- Responsividade para a seção de logotipos ---------- */
+  .logotipos {
+    gap: 5vh;
+    width: 50%;
+  }
+
+  /* Responsividade para a seção de logotipos - container dos cards */
+  .logotipos-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Responsividade para a seção de logotipos - Cards das ferramentas */
+  .card-item {
+    width: 90%;
+    height: auto;
+    margin-top: 1vh;
+    margin-left: -2vh;
+  }
+
+  .card-item a p {
+    font-size: 1rem;
+  }
+
+  /* Responsividade para a seção de contato - card da tabela periódica */
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    /* margin-top: 5rem; */
+  }
+
+  .cards {
+    border-radius: 3vh;
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+    padding: 15px;
+    gap: 1vh;
+  }
+
+  .developers-container {
+    width: 100%;
+  }
+
+  /* Responsividade para a seção de contato - botão de download */
+  .card-buttons {
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-buttons hgroup p {
+    width: 80%;
+  }
+
+  /* Responsividade para a seção de contato - parágrafo */
+  .cards-introduction {
+    text-align: center;
+    width: 90%;
+    /* Define a largura */
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* Responsividade para a seção de contato - card */
+  .card-contact-desenvolvedores {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Responsividade para a seção de contato - container dos desenvolvedores */
+  .developers-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Responsividade para a seção de contato - botão de contato */
+  .section-content {
+    width: 70%;
+    height: auto;
+    padding: 5vh;
+  }
+
+  /* Responsividade para a seção de contato - imagem */
+  .section-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Responsividade para a seção de contato - inputs */
+  .input-dev,
+  .textarea-dev,
+  .button-contact {
+    width: 80%;
+  }
+}
+
+
+/* ================ Estilos para o menu Hamburguer (responsividade)========================*/
+
+@media (max-width: 1220px) {
+  header {
+    background-color: #f3f3f3;
+  }
+
+  .proposal {
+    display: none;
+  }
+
+  .menu-icon .bar,
+  .menu-icon::after,
+  .menu-icon::before {
+    display: block;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .btn {
+    font-size: 0.6rem;
+  }
+
+  ul.navlist {
+    position: absolute;
+    top: -1000px;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 23px 26px -10px rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background: whitesmoke;
+  }
+
+  ul.navlist a {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .navlist.active {
+    top: 100%;
+  }
+
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    opacity: 0;
+    transform: 0.3s;
+    pointer-events: none;
+  }
+}
